@@ -839,33 +839,37 @@ span i {
   height: 520px;
   margin-top: -50px;
 }
+#register input {
+  margin-top: -12px;
+}
 .option {
   text-align: center;
   margin-top: 30px;
   color: black;
   font-weight: bold;
 }
-.mission-box{
+.mission-box {
   width: 45%;
-  height: 350px;
+  height: 380px;
   /* border: 1px solid black; */
   float: left;
   margin: 31px;
+  margin-top: 100px;
 }
-.mission-text{
+.mission-text {
   color: black;
 }
-.mission-block{
+.mission-block {
   width: 100%;
   height: 80px;
   /* border: 1px solid black; */
   margin-top: 20px;
 }
-.mission-content{
+.mission-content {
   color: black;
-margin-left: 40px;
+  margin-left: 40px;
 }
-.mission-title i{
+.mission-title i {
   color: orangered;
 }
 .icon-section {
@@ -1034,9 +1038,29 @@ hr {
   font-weight: 400;
   color: #333;
 }
+textarea {
+  margin-left: 10px;
+}
 .slide .quote-icon {
   font-size: 30px;
   color: #4070f4;
+}
+.submit {
+  width: 150px;
+  height: 45px;
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+iframe {
+  margin-top: 10px;
+}
+.submit:hover {
+  background: none;
+  border: 2px solid black;
+  color: black;
+  transition-duration: 0.5s;
 }
 .slide .details {
   display: flex;
@@ -1068,7 +1092,7 @@ hr {
 }
 .form-section {
   width: 450px;
-  height: 350px;
+  height: 370px;
   /* border: 1px solid black; */
   background-color: whitesmoke;
   margin-left: 450px;
@@ -1095,7 +1119,7 @@ hr {
 .swiper-pagination-bullet {
   background-color: rgba(0, 0, 0, 0.8);
 }
-. .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
   background-color: #4070f4;
 }
 .butn-cover {
@@ -1120,6 +1144,9 @@ hr {
   background-color: white;
   margin-left: 300px;
   margin-top: 100px;
+}
+.form-control {
+  margin-left: 3px;
 }
 
 .button--submit {
@@ -1196,6 +1223,19 @@ hr {
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+
+.map-box {
+  width: 50%;
+  height: 500px;
+  /* border: 1px solid black; */
+  float: left;
+  margin-top: 50px;
+}
+.map-box > form > input {
+  width: 45%;
+  height: 50px;
+  margin: 13px;
 }
 
 .slick-track {
@@ -1326,6 +1366,219 @@ ol {
   margin-top: 30px;
   font-weight: bold;
 }
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+.circle-cover {
+  width: 100%;
+  height: 100px;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle:hover {
+  background-color: red;
+}
+.circle:hover i {
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .form-section {
+    margin-left: 0;
+  }
+  .mission-content {
+    margin-left: 0;
+  }
+
+  .mission {
+    margin-top: 100px;
+  }
+  .mission-box {
+    height: 200px;
+  }
+  .mission-heading {
+    font-size: 30px;
+  }
+  .mission-block {
+    height: auto;
+  }
+  .mission-title {
+    font-size: 25px;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  .terms-and-conditions p {
+    width: 90%;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .heading {
+    font-size: 70px;
+  }
+} */
+.btn {
+  background-color: rgba(0, 0, 0, 0.648);
+  outline: none;
+}
+#contact {
+  color: black;
+}
+.contact-box {
+  width: 30%;
+  height: 300px;
+  background: whitesmoke;
+  float: left;
+  margin: 21px;
+  margin-top: 200px;
+  text-align: center;
+
+  /* box-shadow: 0px 0px 20px whitesmoke; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.contact-title {
+  margin-top: 20px;
+}
+.contact-content {
+  /* color: black; */
+  font-weight: 500;
+}
+
+@media screen and (max-width: 320px) {
+  .form-section input {
+    margin-top: -20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .block {
+    margin: 15px;
+  }
+  .form-section {
+    margin-left: 400px;
+  }
+  .input-group {
+    margin-left: -10px;
+  }
+  .subscription-heading {
+    margin-left: 30px;
+  }
+  .button--submit {
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-box {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+  }
+  #contact {
+    margin-top: 200px;
+  }
+  .map-box {
+    width: 100%;
+    height: 500px;
+  }
+  .map-box iframe {
+    margin-top: 100px;
+  }
+  textarea {
+    margin: 20px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .map-box form input {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 0;
+    margin-top: -600px;
+  }
+  .footer-section {
+    margin-top: 100px;
+  }
+
+  .subscription-heading {
+    font-size: 25px;
+    text-align: center;
+  }
+  .arrivals {
+    font-size: 30px;
+    margin-top: 600px;
+  }
+  .feature {
+    font-size: 30px;
+  }
+  .bg-image {
+    height: 280px;
+  }
+  .butn {
+    margin-left: 0;
+  }
+  .paragraph {
+    text-align: center;
+    margin-left: 0;
+  }
+  .input-group .input {
+    width: 60%;
+  }
+  .services-section > .services-block {
+    width: 100%;
+    margin-left: 0;
+  }
+  .block {
+    margin-left: 0;
+  }
+  .footer-block ol li {
+    margin-left: -70px;
+  }
+  .footer-title {
+    margin-left: 0px;
+  }
+  .footer-content {
+    margin-left: 0px;
+  }
+  .footer-address {
+    margin-left: 0;
+  }
+  .address {
+    margin-left: 0;
+  }
+  .mail {
+    margin-left: 0;
+  }
+  .number {
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .block {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .footer-section {
+    margin-top: 100px;
+  }
+}
 @media only screen and (max-width: 990px) {
   .product-grid {
     margin-bottom: 30px;
@@ -1333,7 +1586,7 @@ ol {
   .bg-image {
     height: 400px;
   }
-  .mission-box{
+  .mission-box {
     width: 100%;
     margin: 0;
     text-align: center;
@@ -1361,6 +1614,7 @@ ol {
     height: 150px;
     text-align: center;
   }
+
   .subscribe {
     width: 200px;
     margin-left: -10px;
@@ -1411,7 +1665,7 @@ ol {
   }
   .form-section {
     width: 100%;
-    margin-left: 0;
+    margin-left: 0px;
   }
   .box {
     width: 100%;
@@ -1439,70 +1693,12 @@ ol {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
   .heading {
-    font-size: 40px;
-    text-align: center;
-    margin-left: 0;
-    margin-top: -600px;
-  }
-  .subscription-heading {
-    font-size: 25px;
-    text-align: center;
-  }
-  .arrivals {
-    font-size: 30px;
-    margin-top: 600px;
-  }
-  .feature {
-    font-size: 30px;
+    font-size: 50px;
+    margin-top: -500px;
   }
   .bg-image {
     height: 280px;
-  }
-  .butn {
-    margin-left: 0;
-  }
-  .paragraph {
-    text-align: center;
-    margin-left: 0;
-  }
-  .input-group .input {
-    width: 60%;
-  }
-  .services-section > .services-block {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-
-.block{
-  margin: 15px;
-}  
-.form-section{
-  margin-left: 400px;
-}
-
-.input-group{
-  margin-left: -10px;
-}
-.subscription-heading{
-  margin-left: 30px;
-}
-.button--submit{
-  margin-left: -50px;
-}
-
-
-}
-
-@media screen and (max-width: 500px) {
-  .form-section{
-    margin-left: 0;
-  }
-  .mission-content{
-    margin-left: 0;
   }
 }
